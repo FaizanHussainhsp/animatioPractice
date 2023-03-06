@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -36,3 +35,27 @@
     transform: rotate(360deg);
   }
 }
+
+/* testing */
+/* .fade-exit-active {
+  transform: translateY(20%);
+}
+
+.fade-enter-active {
+  transform: translateY(20%);
+  animation: entered 0.4s ease-out;
+} */
+
+/* @keyframes entered {
+  0% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */

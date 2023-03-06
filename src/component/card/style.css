@@ -1,0 +1,55 @@
+.card {
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 10px;
+  transition: all 0.6 ease-in-out;
+}
+
+.card__img {
+  width: 100%;
+  max-height: 50%;
+  object-fit: cover;
+}
+
+.card__heading {
+  color: rgb(223, 127, 3);
+}
+
+.card__detail {
+  color: rgb(145, 145, 0);
+}
+
+.active {
+  animation: activeAnimation 0.6s ease-out forwards;
+  opacity: 1;
+}
+
+@keyframes activeAnimation {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.unactive {
+  transform: translateY();
+  animation: remove 0.6s ease-out;
+  opacity: 0;
+}
+
+@keyframes remove {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1000%);
+  }
+}
